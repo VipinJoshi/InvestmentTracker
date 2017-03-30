@@ -125,7 +125,7 @@ namespace DataModel.UnitOfWork
         /// <param name="disposing"></param>
         protected virtual void Dispose(bool disposing)
         {
-            if (!this.disposed)
+            if (!disposed)
             {
                 if (disposing)
                 {
@@ -133,7 +133,7 @@ namespace DataModel.UnitOfWork
                     context.Dispose();
                 }
             }
-            this.disposed = true;
+            disposed = true;
         }
 
         /// <summary>
