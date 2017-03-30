@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*
+ * This controller is used to handle User registration request
+ */ 
+using System;
 using System.Collections.Generic;
 using System.Web.Http;
 using BussinessServices.Users;
@@ -12,9 +15,9 @@ using InvestmentTrackerApi.HelperClass;
 namespace InvestmentTrackerApi.Controller
 {
     [RoutePrefix("api/User")]
-    public class RegisterController:ApiController
+    public class RegisterController : ApiController
     {
-        private readonly IRegisterUser userRegistration=null;
+        private readonly IRegisterUser userRegistration = null;
         public RegisterController()
         {
             userRegistration = new Register();
@@ -40,10 +43,10 @@ namespace InvestmentTrackerApi.Controller
                     UserName = registration.UserName,
                     Email = registration.Email,
                     Password = PassWordEncryption.EncryptPassword(registration.password),
-                    Active=true,
-                    Locked=false,
-                    DateOfAccountCreation=DateTime.Now
-                    
+                    Active = true,
+                    Locked = false,
+                    DateOfAccountCreation = DateTime.Now
+
                 };
                 userRegistration.RegisterUser(register);
 
@@ -54,11 +57,8 @@ namespace InvestmentTrackerApi.Controller
                 response = Request.CreateResponse(HttpStatusCode.NotAcceptable, registration);
             }
             return response;
-            // return HttpStatusCode.Unauthorized ;
 
         }
-
-        
 
         [HttpGet]
         //[ActionName("CheckUserName")]
@@ -68,7 +68,7 @@ namespace InvestmentTrackerApi.Controller
             var isAvailable = userRegistration.UserNameAvailability(userName);
             List<string> availableName = null;
 
-            
+
             if (!isAvailable)
             {
                 var name = string.Format(userName + "77");
@@ -82,11 +82,8 @@ namespace InvestmentTrackerApi.Controller
                 SuggestedUserName = availableName
 
             };
-            
-           
+
             return user;
         }
-
-        
     }
 }

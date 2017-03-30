@@ -1,7 +1,7 @@
+using System.Data.Entity.Migrations;
+
 namespace InvestmentDataModel.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
     
     public partial class initial : DbMigration
     {

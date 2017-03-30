@@ -1,4 +1,6 @@
-﻿//using InvestmentDataModel.DataModel;
+﻿/*
+ * this is Db context class here we attach the database name to the  DataBaseContext class
+ */
 using InvestmentDataModel.DataModel;
 using System.Data.Entity;
 

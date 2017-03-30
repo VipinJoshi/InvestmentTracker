@@ -1,7 +1,6 @@
 ﻿using InvestmentDataModel;
 using InvestmentTrackerApi.App_Start;
 using System;
-using System.Data.Entity;
 using System.Web.Http;
 
 namespace InvestmentTrackerApi
@@ -11,8 +10,7 @@ namespace InvestmentTrackerApi
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Database.SetInitializer<DataBaseContext>(null);
-            //GlobalConfiguration.Configuration.Routes.Add("default", new HttpRoute("{Controller}/{action}/{Id}"));
+           // Database.SetInitializer<DataBaseContext>(null);//todo: I might need this
             GlobalConfiguration.Configure(WebApiConfig.Register);
 
         }

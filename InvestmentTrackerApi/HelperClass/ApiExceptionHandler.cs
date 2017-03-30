@@ -1,4 +1,7 @@
-﻿using System.Net;
+﻿/*
+ * Exception handler class to handle exceptions
+ */ 
+using System.Net;
 using System.Net.Http;
 using System.Web.Http.ExceptionHandling;
 

@@ -1,4 +1,7 @@
-﻿using System.Net.Http;
+﻿/*
+ * Exception result class call from Handler class 
+ */
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;

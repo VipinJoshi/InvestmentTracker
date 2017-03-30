@@ -6,11 +6,7 @@ namespace InvestmentDataModel.IRepository
 {
     public interface IGenericRepository<TEntity>
     {
-
-       
-
         IEnumerable<TEntity> Get();//to get all the data
-
 
         TEntity GetByID(object id);
 
@@ -27,20 +23,17 @@ namespace InvestmentDataModel.IRepository
         /// <param name="id"></param>
         void Delete(object id);
 
-
         /// <summary>
         /// Generic Delete method for the entities
         /// </summary>
         /// <param name="entityToDelete"></param>
         void Delete(TEntity entityToDelete);
 
-
         /// <summary>
         /// Generic update method for the entities
         /// </summary>
         /// <param name="entityToUpdate"></param>
         void Update(TEntity entityToUpdate);
-
 
         /// <summary>
         /// generic method to get many record on the basis of a condition.
@@ -56,15 +49,12 @@ namespace InvestmentDataModel.IRepository
 
         void Delete(Func<TEntity, Boolean> where);
 
-
         IEnumerable<TEntity> GetAll()       ;
 
         IQueryable<TEntity> GetWithInclude(System.Linq.Expressions.Expression<Func<TEntity,
             bool>> predicate, params string[] include);
 
-
         bool Exists(object primaryKey);
-
 
         TEntity GetSingle(Func<TEntity, bool> predicate);
 

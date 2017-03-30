@@ -125,8 +125,6 @@ namespace InvestmentDataModel.GenericRepository
         public TEntity Get(Func<TEntity, Boolean> where)
         {
             return DbSet.FirstOrDefault<TEntity>(where);
-            //return DbSet.FirstOrDefault<TEntity>();
-           // .Where<TEntity>()
         }
 
         /// <summary>

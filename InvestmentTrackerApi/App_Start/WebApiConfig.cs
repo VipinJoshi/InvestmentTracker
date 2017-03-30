@@ -1,4 +1,7 @@
-﻿using System.Web.Http;
+﻿/*
+ * Api config file
+ */
+using System.Web.Http;
 using System.Web.Http.ExceptionHandling;
 
 namespace InvestmentTrackerApi.App_Start

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Unit of work class file is used to implement the logic to save the chanes in db 
+ * assign  repository to the object and 
+ * method to dispose the object
+ */
+using System;
 using System.Collections.Generic;
 using InvestmentDataModel.GenericRepository;
 using System.Diagnostics;
@@ -15,6 +20,7 @@ namespace DataModel.UnitOfWork
         #region Private member variables...
 
         private DataBaseContext context = null;
+        private bool disposed = false;
 
         public UnitOfWork()
         {
@@ -23,52 +29,10 @@ namespace DataModel.UnitOfWork
 
         GenericRepository<UserLogin, DataBaseContext> _userRepository;
 
-        //private GenericRepository<userslogin> _userRepository;
-        //private GenericRepository<useraccountdetail, context> _productRepository;
-        //private GenericRepository<useraccountdetail,context> _tokenRepository;//change later
         #endregion
 
-        #region Public member methods...
-        /// <summary>
-        /// Save method.
-        /// </summary>
-        public void Save()
-        {
-            try
-            {
-                context.SaveChanges();
-            }
-            catch (DbEntityValidationException e)
-            {
-
-                var outputLines = new List<string>();
-                foreach (var eve in e.EntityValidationErrors)
-                {
-                    outputLines.Add(string.Format(
-                        "{0}: Entity of type \"{1}\" in state \"{2}\" has the following validation errors:", DateTime.Now,
-                        eve.Entry.Entity.GetType().Name, eve.Entry.State));
-                    foreach (var ve in eve.ValidationErrors)
-                    {
-                        outputLines.Add(string.Format("- Property: \"{0}\", Error: \"{1}\"", ve.PropertyName, ve.ErrorMessage));
-                    }
-                }
-                System.IO.File.AppendAllLines(@"C:\errors.txt", outputLines);//todo: change the path
-
-                throw e;
-            }
-
-        }
-
-        #endregion
-
-        #region Implementing IDiosposable...
-
-        #region private dispose variable declaration...
-        private bool disposed = false;
-
-      
-
-        
+        #region properties
+       
 
         public IGenericRepository<UserLogin> UsersLogin
         {
@@ -90,6 +54,14 @@ namespace DataModel.UnitOfWork
             }
         }
 
+        #endregion
+
+
+        #region Methods
+        /// <summary>
+        /// this class is used to save the changes in db
+        /// </summary>
+        /// <returns></returns>
         public int Complete()
         {
             try
@@ -117,8 +89,6 @@ namespace DataModel.UnitOfWork
             }
 
         }
-        #endregion
-
         /// <summary>
         /// Protected Virtual Dispose method
         /// </summary>
