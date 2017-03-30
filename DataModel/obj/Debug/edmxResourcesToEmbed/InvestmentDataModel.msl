@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InvestmentsTrackerModelStoreContainer" CdmEntityContainer="InvestmentTrackerEntities">
+    <EntitySetMapping Name="earningslabs">
+      <EntityTypeMapping TypeName="InvestmentsTrackerModel.earningslab">
+        <MappingFragment StoreEntitySet="earningslab">
+          <ScalarProperty Name="EarningSlabId" ColumnName="EarningSlabId" />
+          <ScalarProperty Name="EarningSlabName" ColumnName="EarningSlabName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="investmentschedules">
+      <EntityTypeMapping TypeName="InvestmentsTrackerModel.investmentschedule">
+        <MappingFragment StoreEntitySet="investmentschedule">
+          <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+          <ScalarProperty Name="ScheduleName" ColumnName="ScheduleName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="investmenttypes">
+      <EntityTypeMapping TypeName="InvestmentsTrackerModel.investmenttype">
+        <MappingFragment StoreEntitySet="investmenttype">
+          <ScalarProperty Name="InvestmentTypeId" ColumnName="InvestmentTypeId" />
+          <ScalarProperty Name="InvestmentTypeName" ColumnName="InvestmentTypeName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="providers">
+      <EntityTypeMapping TypeName="InvestmentsTrackerModel.provider">
+        <MappingFragment StoreEntitySet="provider">
+          <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="useraccountdetails">
+      <EntityTypeMapping TypeName="InvestmentsTrackerModel.useraccountdetail">
+        <MappingFragment StoreEntitySet="useraccountdetail">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="PanCard" ColumnName="PanCard" />
+          <ScalarProperty Name="EarningSlabID" ColumnName="EarningSlabID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userslogins">
+      <EntityTypeMapping TypeName="InvestmentsTrackerModel.userslogin">
+        <MappingFragment StoreEntitySet="userslogin">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

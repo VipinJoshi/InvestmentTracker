@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+  
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InvestmentsTrackerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="earningslab">
+          <Key>
+            <PropertyRef Name="EarningSlabId" />
+          </Key>
+          <Property Name="EarningSlabId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EarningSlabName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="investmentschedule">
+          <Key>
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Name="ScheduleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ScheduleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="investmenttype">
+          <Key>
+            <PropertyRef Name="InvestmentTypeId" />
+          </Key>
+          <Property Name="InvestmentTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InvestmentTypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="provider">
+          <Key>
+            <PropertyRef Name="ProviderId" />
+          </Key>
+          <Property Name="ProviderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="useraccountdetail">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int64" Nullable="false" />
+          <Property Name="DateOfBirth" Type="DateTime" />
+          <Property Name="PanCard" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="EarningSlabID" Type="Int32" />
+          <Property Name="Gender" Type="Boolean" />
+          <Property Name="MobileNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="userslogin" Relationship="Self.UserId" FromRole="useraccountdetail" ToRole="userslogin" />
+        </EntityType>
+        <EntityType Name="userslogin">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="Locked" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="useraccountdetail" Relationship="Self.UserId" FromRole="userslogin" ToRole="useraccountdetail" />
+        </EntityType>
+        <Association Name="UserId">
+          <End Role="userslogin" Type="Self.userslogin" Multiplicity="1" />
+          <End Role="useraccountdetail" Type="Self.useraccountdetail" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="userslogin">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="useraccountdetail">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="InvestmentTrackerEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="earningslabs" EntityType="Self.earningslab" />
+          <EntitySet Name="investmentschedules" EntityType="Self.investmentschedule" />
+          <EntitySet Name="investmenttypes" EntityType="Self.investmenttype" />
+          <EntitySet Name="providers" EntityType="Self.provider" />
+          <EntitySet Name="useraccountdetails" EntityType="Self.useraccountdetail" />
+          <EntitySet Name="userslogins" EntityType="Self.userslogin" />
+          <AssociationSet Name="UserId" Association="Self.UserId">
+            <End Role="userslogin" EntitySet="userslogins" />
+            <End Role="useraccountdetail" EntitySet="useraccountdetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="InvestmentsTrackerModelStoreContainer" CdmEntityContainer="InvestmentTrackerEntities">
+          <EntitySetMapping Name="earningslabs">
+            <EntityTypeMapping TypeName="InvestmentsTrackerModel.earningslab">
+              <MappingFragment StoreEntitySet="earningslab">
+                <ScalarProperty Name="EarningSlabId" ColumnName="EarningSlabId" />
+                <ScalarProperty Name="EarningSlabName" ColumnName="EarningSlabName" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="investmentschedules">
+            <EntityTypeMapping TypeName="InvestmentsTrackerModel.investmentschedule">
+              <MappingFragment StoreEntitySet="investmentschedule">
+                <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+                <ScalarProperty Name="ScheduleName" ColumnName="ScheduleName" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="investmenttypes">
+            <EntityTypeMapping TypeName="InvestmentsTrackerModel.investmenttype">
+              <MappingFragment StoreEntitySet="investmenttype">
+                <ScalarProperty Name="InvestmentTypeId" ColumnName="InvestmentTypeId" />
+                <ScalarProperty Name="InvestmentTypeName" ColumnName="InvestmentTypeName" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="providers">
+            <EntityTypeMapping TypeName="InvestmentsTrackerModel.provider">
+              <MappingFragment StoreEntitySet="provider">
+                <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="useraccountdetails">
+            <EntityTypeMapping TypeName="InvestmentsTrackerModel.useraccountdetail">
+              <MappingFragment StoreEntitySet="useraccountdetail">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="PanCard" ColumnName="PanCard" />
+                <ScalarProperty Name="EarningSlabID" ColumnName="EarningSlabID" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userslogins">
+            <EntityTypeMapping TypeName="InvestmentsTrackerModel.userslogin">
+              <MappingFragment StoreEntitySet="userslogin">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Locked" ColumnName="Locked" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

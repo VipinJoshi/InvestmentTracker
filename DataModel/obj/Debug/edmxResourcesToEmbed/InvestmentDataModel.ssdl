@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InvestmentsTrackerModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="earningslab">
+    <Key>
+      <PropertyRef Name="EarningSlabId" />
+    </Key>
+    <Property Name="EarningSlabId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EarningSlabName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="investmentschedule">
+    <Key>
+      <PropertyRef Name="ScheduleID" />
+    </Key>
+    <Property Name="ScheduleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScheduleName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="investmenttype">
+    <Key>
+      <PropertyRef Name="InvestmentTypeId" />
+    </Key>
+    <Property Name="InvestmentTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InvestmentTypeName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="provider">
+    <Key>
+      <PropertyRef Name="ProviderId" />
+    </Key>
+    <Property Name="ProviderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="useraccountdetail">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="DateOfBirth" Type="datetime" Precision="0" />
+    <Property Name="PanCard" Type="varchar" MaxLength="15" />
+    <Property Name="EarningSlabID" Type="int" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="MobileNumber" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="userslogin">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="password" Type="char" MaxLength="32" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="UserId">
+    <End Role="userslogin" Type="Self.userslogin" Multiplicity="1" />
+    <End Role="useraccountdetail" Type="Self.useraccountdetail" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="userslogin">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="useraccountdetail">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="InvestmentsTrackerModelStoreContainer">
+    <EntitySet Name="earningslab" EntityType="Self.earningslab" Schema="investmentstracker" store:Type="Tables" />
+    <EntitySet Name="investmentschedule" EntityType="Self.investmentschedule" Schema="investmentstracker" store:Type="Tables" />
+    <EntitySet Name="investmenttype" EntityType="Self.investmenttype" Schema="investmentstracker" store:Type="Tables" />
+    <EntitySet Name="provider" EntityType="Self.provider" Schema="investmentstracker" store:Type="Tables" />
+    <EntitySet Name="useraccountdetail" EntityType="Self.useraccountdetail" Schema="investmentstracker" store:Type="Tables" />
+    <EntitySet Name="userslogin" EntityType="Self.userslogin" Schema="investmentstracker" store:Type="Tables" />
+    <AssociationSet Name="UserId" Association="Self.UserId">
+      <End Role="userslogin" EntitySet="userslogin" />
+      <End Role="useraccountdetail" EntitySet="useraccountdetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

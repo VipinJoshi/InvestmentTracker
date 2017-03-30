@@ -1,0 +1,13 @@
+F:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.dll
+F:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.pdb
+F:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.csprojResolveAssemblyReference.cache
+F:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.dll
+F:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.pdb
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.pdb
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.pdb

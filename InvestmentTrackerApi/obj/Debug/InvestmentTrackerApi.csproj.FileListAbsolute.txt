@@ -1,0 +1,159 @@
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\ApplicationInsights.config
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\csc.exe
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\System.Collections.Immutable.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\System.Reflection.Metadata.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\vbc.exe
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\VBCSCompiler.exe
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\VBCSCompiler.exe.config
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.dll.config
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.pdb
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Agent.Intercept.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.DependencyCollector.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Web.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.WindowsServer.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.ApplicationInsights.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Newtonsoft.Json.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Net.Http.Formatting.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.WebHost.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.DependencyCollector.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Web.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.WindowsServer.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.ApplicationInsights.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Newtonsoft.Json.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Net.Http.Formatting.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.WebHost.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.csprojResolveAssemblyReference.cache
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.pdb
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessEntities.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessServices.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\DataModel.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessEntities.pdb
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessServices.pdb
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\DataModel.pdb
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.xml
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\MySql.Data.Entity.EF6.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\MySql.Data.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.SqlServer.dll
+F:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.SqlServer.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.csprojResolveAssemblyReference.cache
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\ApplicationInsights.config
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\csc.exe
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\vbc.exe
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.dll.config
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.pdb
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessEntities.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessServices.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.SqlServer.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Web.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\MySql.Data.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Newtonsoft.Json.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Net.Http.Formatting.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.WebHost.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessEntities.pdb
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessServices.pdb
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.SqlServer.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Web.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Newtonsoft.Json.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Net.Http.Formatting.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.WebHost.xml
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.pdb
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentDataModel.dll
+C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentDataModel.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\ApplicationInsights.config
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\csc.exe
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\System.Collections.Immutable.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\System.Reflection.Metadata.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\vbc.exe
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\VBCSCompiler.exe
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\roslyn\VBCSCompiler.exe.config
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.dll.config
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerApi.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessEntities.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessServices.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.SqlServer.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Agent.Intercept.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.DependencyCollector.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Web.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.WindowsServer.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.ApplicationInsights.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\MySql.Data.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\MySql.Data.Entity.EF6.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Newtonsoft.Json.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Net.Http.Formatting.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.WebHost.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentDataModel.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessEntities.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\BussinessServices.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\EntityFramework.SqlServer.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.DependencyCollector.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.Web.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.AI.WindowsServer.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.ApplicationInsights.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\Newtonsoft.Json.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Net.Http.Formatting.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\System.Web.Http.WebHost.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentDataModel.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.csprojResolveAssemblyReference.cache
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.pdb
