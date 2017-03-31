@@ -34,24 +34,22 @@ namespace BussinessServices.Users
         /// <returns></returns>
         public long RegisterUser(UserLoginEntity register)
         {
-            using (var scope = new TransactionScope())
-            {
-                var userLogin = new UserLogin
-                {
-                    UserName = register.UserName,
-                    Email = register.Email,
-                    Password = register.Password,
-                    Active = register.Active,
-                    Locked = register.Locked,
-                    DateOfAccountCreation=register.DateOfAccountCreation
-                };
 
-                unitOfWork.UsersLogin.Insert(userLogin);
-                unitOfWork.Complete();
-                scope.Complete();
-                unitOfWork.Dispose();
-                return userLogin.UserId;
-            }
+            var userLogin = new UserLogin
+            {
+                UserName = register.UserName,
+                Email = register.Email,
+                Password = register.Password,
+                Active = register.Active,
+                Locked = register.Locked,
+                DateOfAccountCreation = register.DateOfAccountCreation
+            };
+
+            unitOfWork.UsersLogin.Insert(userLogin);
+            unitOfWork.Complete();
+            unitOfWork.Dispose();
+            return userLogin.UserId;
+
         }
 
         
