@@ -1,6 +1,8 @@
-﻿using System;
+﻿/* 
+ * Register class contains all the bussiness logic related to Registration process
+ */ 
+using System;
 using BussinessEntities;
-using System.Transactions;
 using BussinessServices.Interface;
 using DataModel.UnitOfWork;
 using InvestmentDataModel.DataModel;
@@ -17,7 +19,9 @@ namespace BussinessServices.Users
             unitOfWork = new UnitOfWork();
         }
 
-        //check user name availability
+        /// <summary>
+        /// check user name availability
+        /// </summary>
         public bool UserNameAvailability(string userName)
         {
 
