@@ -147,8 +147,6 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controller\RegisterController.cs" />
-    <Compile Include="DTO\UserAvailability.cs" />
-    <Compile Include="DTO\UserRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -170,6 +168,10 @@
     <ProjectReference Include="..\InvestmentDataModel\InvestmentDataModel.csproj">
       <Project>{D1345E94-B50F-421A-839F-B3CA34B58C86}</Project>
       <Name>InvestmentDataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InvestmentTrackerDTO\InvestmentTrackerDTO.csproj">
+      <Project>{afb08dc6-ff4c-4d94-9c12-3318979d6988}</Project>
+      <Name>InvestmentTrackerDTO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

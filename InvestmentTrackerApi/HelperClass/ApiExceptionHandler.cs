@@ -18,7 +18,6 @@ namespace InvestmentTrackerApi.HelperClass
             };
 
             context.Result = new ApiExceptionResult(context.Request, result);
-           // base.Handle(context);
         }
 
     }

@@ -46,10 +46,12 @@ namespace DataModel.UnitOfWork
             }
         }
 
+        
         public IGenericRepository<UserAccountDetail> UsersAccountDetail
         {
             get
             {
+                //not implemented as its not in used right now
                 throw new NotImplementedException();
             }
         }
@@ -71,7 +73,7 @@ namespace DataModel.UnitOfWork
             }
             catch (DbEntityValidationException e)
             {
-
+                //todo: change that as per need in future
                 var outputLines = new List<string>();
                 foreach (var eve in e.EntityValidationErrors)
                 {

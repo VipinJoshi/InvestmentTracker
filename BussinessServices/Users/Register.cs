@@ -10,8 +10,8 @@ using InvestmentDataModel.DataModel;
 namespace BussinessServices.Users
 {
     public class Register : IRegisterUser
-
     {
+
         private readonly UnitOfWork unitOfWork;
 
         public Register()
@@ -24,8 +24,8 @@ namespace BussinessServices.Users
         /// </summary>
         public bool UserNameAvailability(string userName)
         {
-
             var userLogin = new UserLogin();
+
             var result = unitOfWork.UsersLogin.Get(p=>string.Equals(p.UserName,userName,StringComparison.OrdinalIgnoreCase)) ?? new UserLogin() ;
 
             return !(result.UserId>0);
@@ -38,7 +38,6 @@ namespace BussinessServices.Users
         /// <returns></returns>
         public long RegisterUser(UserLoginEntity register)
         {
-
             var userLogin = new UserLogin
             {
                 UserName = register.UserName,

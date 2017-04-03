@@ -1,4 +1,7 @@
-﻿namespace InvestmentTrackerApi.DTO
+﻿/*
+ * Data transfer object for User registration 
+ */ 
+namespace InvestmentTrackerDTO
 {
     public class UserRegistration
     {

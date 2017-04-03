@@ -157,3 +157,5 @@ E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentDat
 E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.csprojResolveAssemblyReference.cache
 E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.dll
 E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\obj\Debug\InvestmentTrackerApi.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerDTO.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerApi\bin\InvestmentTrackerDTO.pdb

@@ -11,3 +11,4 @@ E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessE
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.pdb
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.dll
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.csprojResolveAssemblyReference.cache

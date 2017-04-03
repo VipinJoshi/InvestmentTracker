@@ -1,0 +1,5 @@
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerDTO\bin\Debug\InvestmentTrackerDTO.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerDTO\bin\Debug\InvestmentTrackerDTO.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerDTO\obj\Debug\InvestmentTrackerDTO.csprojResolveAssemblyReference.cache
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerDTO\obj\Debug\InvestmentTrackerDTO.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentTrackerDTO\obj\Debug\InvestmentTrackerDTO.pdb

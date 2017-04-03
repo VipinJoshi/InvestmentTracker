@@ -1,8 +1,8 @@
 ﻿/*
  * this class is used to get encrypt password to MD5 format
  * */
-using System.Security.Cryptography;
 using System.Text;
+using System.Security.Cryptography;
 
 namespace InvestmentTrackerApi.HelperClass
 {
@@ -12,7 +12,6 @@ namespace InvestmentTrackerApi.HelperClass
         /// password encyption to MD5
         /// </summary>
         /// <param name="password"></param>
-        /// <returns></returns>
         public static string EncryptPassword( string password)
         {
             using (MD5 md5Hash = MD5.Create())

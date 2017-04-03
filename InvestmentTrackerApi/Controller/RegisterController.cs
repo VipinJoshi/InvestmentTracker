@@ -1,16 +1,17 @@
 ﻿/*
  * This controller is used to handle User registration request
- */ 
+ */
+
 using System;
 using System.Collections.Generic;
-using System.Web.Http;
-using BussinessServices.Users;
-using BussinessServices.Interface;
-using InvestmentTrackerApi.DTO;
-using BussinessEntities;
-using System.Net.Http;
 using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using BussinessEntities;
+using BussinessServices.Interface;
+using BussinessServices.Users;
 using InvestmentTrackerApi.HelperClass;
+using InvestmentTrackerDTO;
 
 namespace InvestmentTrackerApi.Controller
 {
@@ -18,15 +19,12 @@ namespace InvestmentTrackerApi.Controller
     public class RegisterController : ApiController
     {
         private readonly IRegisterUser userRegistration = null;
+
         public RegisterController()
         {
             userRegistration = new Register();
         }
 
-        public string Get()
-        {
-            return string.Format("Hello Vipin its {0} so make it quick", DateTime.Now);
-        }
 
 
         [HttpPost]
@@ -47,10 +45,13 @@ namespace InvestmentTrackerApi.Controller
                     Locked = false,
                     DateOfAccountCreation = DateTime.Now
 
+
+
                 };
+
                 userRegistration.RegisterUser(register);
 
-                response = Request.CreateResponse(HttpStatusCode.OK, registration);
+                response = Request.CreateResponse(HttpStatusCode.OK, registration); 
             }
             else
             {
@@ -68,7 +69,6 @@ namespace InvestmentTrackerApi.Controller
             var isAvailable = userRegistration.UserNameAvailability(userName);
             List<string> availableName = null;
 
-
             if (!isAvailable)
             {
                 var name = string.Format(userName + "77");
@@ -85,5 +85,6 @@ namespace InvestmentTrackerApi.Controller
 
             return user;
         }
+
     }
 }
