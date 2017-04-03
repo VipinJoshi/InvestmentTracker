@@ -49,6 +49,7 @@ namespace InvestmentTrackerApi.Controller
 
                 };
 
+                // Register user
                 userRegistration.RegisterUser(register);
 
                 response = Request.CreateResponse(HttpStatusCode.OK, registration); 
