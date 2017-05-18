@@ -26,9 +26,29 @@ namespace InvestmentTrackerApi.Controller
 
         [HttpPost]
         [Route("{SaveLoanLead}")]
-        public IHttpActionResult SaveLoanLead()
+        public IHttpActionResult SaveLoanLead(LoanLeadInformationDTO loanLeadDto)
         {
-            return Ok();
+            if (loanLeadDto != null && ModelState.IsValid)
+            {
+                var dto = new LoanLeadInformationDTO
+                {
+                    City = loanLeadDto.City,
+                    EmailId = loanLeadDto.EmailId,
+                    LeadDescription = loanLeadDto.LeadDescription,
+                    LoanTypeId = loanLeadDto.LoanTypeId,
+                    MobileNumber = loanLeadDto.MobileNumber,
+                    Name = loanLeadDto.Name
+                };
+
+                leadInformation.InsertLead(loanLeadDto);
+                return Ok();
+
+            }
+            else
+            {
+                return BadRequest();
+            }
+            
         }
     }
 

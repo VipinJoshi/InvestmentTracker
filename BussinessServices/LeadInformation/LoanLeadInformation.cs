@@ -27,7 +27,10 @@ namespace BussinessServices.LeadInformation
                 LeadDescription = entity.LeadDescription,
                 DateOfLeadCreation = DateTime.Now,
                 MobileNumber = entity.MobileNumber,
-                LoanTypeId = entity.LoanTypeId
+                LoanTypeId = entity.LoanTypeId,
+                City=entity.City,
+                Name=entity.Name
+
             };
             unitOfWork.LoanLeadInformation.Insert(leadInformation);
             var id= unitOfWork.Complete();
