@@ -23,6 +23,14 @@ namespace InvestmentTrackerApi.Controller
         {
             return loanType.GetLoanType();
         }
+
+        [HttpPost]
+        [Route("{SaveLoanLead}")]
+
+        public IHttpActionResult SaveLoanLead()
+        {
+            return Ok();
+        }
     }
 
     
