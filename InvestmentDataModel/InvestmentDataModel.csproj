@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseContext.cs" />
+    <Compile Include="DataModel\LoanLeadInformation.cs" />
+    <Compile Include="DataModel\LoanType.cs" />
     <Compile Include="DataModel\UserAccountDetail.cs" />
     <Compile Include="DataModel\UserLogin.cs" />
     <Compile Include="GenericRepository\GenericRepository.cs" />
@@ -68,6 +70,7 @@
       <DependentUpon>201703300745068_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\LookUpMigrationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
@@ -75,15 +78,14 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703300745068_initial.resx">
       <DependentUpon>201703300745068_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

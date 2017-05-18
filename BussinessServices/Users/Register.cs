@@ -1,11 +1,11 @@
 ﻿/* 
  * Register class contains all the bussiness logic related to Registration process
- */ 
+ */
 using System;
-using BussinessEntities;
 using BussinessServices.Interface;
 using DataModel.UnitOfWork;
 using InvestmentDataModel.DataModel;
+using InvestmentDTO.UserDTO;
 
 namespace BussinessServices.Users
 {
@@ -36,7 +36,7 @@ namespace BussinessServices.Users
         /// </summary>
         /// <param name="register"></param>
         /// <returns></returns>
-        public long RegisterUser(UserLoginEntity register)
+        public long RegisterUser(UserLoginDTO register)
         {
             var userLogin = new UserLogin
             {
@@ -52,6 +52,24 @@ namespace BussinessServices.Users
             unitOfWork.Complete();
             unitOfWork.Dispose();
             return userLogin.UserId;
+
+        }
+
+        public UserLogin AuthorisedUser(UserLoginDTO register)
+        {
+            var userLogin = new UserLogin
+            {
+                UserName = register.UserName,
+                Email = register.Email,
+                Password = register.Password
+            };
+            UserLogin user = unitOfWork.UsersLogin.Get(
+                  p => p.UserName.Equals(register.UserName, StringComparison.OrdinalIgnoreCase));
+           //     &&
+           //p.Password.Equals(register.Password)
+           //&& p.Active.Equals(register.Active)
+           //&& p.Locked.Equals(register.Locked));
+            return user;
 
         }
 

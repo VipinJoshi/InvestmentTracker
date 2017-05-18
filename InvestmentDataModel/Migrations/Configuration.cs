@@ -6,7 +6,7 @@ namespace InvestmentDataModel.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
             SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
 
@@ -26,6 +26,10 @@ namespace InvestmentDataModel.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            LookUpMigrationData migration = new LookUpMigrationData(); 
+            migration.LoanTypeData(context);
         }
+
+
     }
 }

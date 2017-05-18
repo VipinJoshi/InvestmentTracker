@@ -9,7 +9,7 @@ namespace InvestmentDataModel.IRepository
         IEnumerable<TEntity> Get();//to get all the data
 
         TEntity GetByID(object id);
-
+        IQueryable<TEntity> GetQuery();
         /// <summary>
         /// generic Insert method for the entities
         /// </summary>

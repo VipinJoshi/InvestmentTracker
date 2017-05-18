@@ -33,13 +33,13 @@ namespace InvestmentTrackerApi.App_Start
             //config.Routes.MapHttpRoute(
             //    name: "ApiRoot",
             //    routeTemplate: "api/{Action}/{userName}",
-            //    defaults: new { controller = "Register", Action = "CheckUserName", id = RouteParameter.Optional }
+            //    defaults: new { controller = "Register", Action = "", id = RouteParameter.Optional }
             //    );
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{action}/{id}",
-                 defaults: new { action = "CheckUserName", id = RouteParameter.Optional }
+                routeTemplate: "{controller}/{action}/{id}",
+                 defaults: new {Controller="LoanLead", action = "getloantype", id = RouteParameter.Optional }
             );
         }
 

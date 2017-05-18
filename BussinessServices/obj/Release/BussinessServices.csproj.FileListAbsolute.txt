@@ -1,0 +1,17 @@
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\BussinessServices.dll.config
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\BussinessServices.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\BussinessServices.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\AutoMapper.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\BussinessEntities.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\InvestmentDataModel.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\InvestmentDTO.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\EntityFramework.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\MySql.Data.Entity.EF6.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\BussinessEntities.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\InvestmentDataModel.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\InvestmentDTO.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\AutoMapper.xml
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\bin\Release\EntityFramework.xml
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\obj\Release\BussinessServices.csprojResolveAssemblyReference.cache
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\obj\Release\BussinessServices.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessServices\obj\Release\BussinessServices.pdb

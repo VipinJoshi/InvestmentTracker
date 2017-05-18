@@ -1,11 +1,11 @@
-﻿using BussinessEntities;
-using InvestmentDataModel;
+﻿using InvestmentDataModel.DataModel;
+using InvestmentDTO.UserDTO;
 
 namespace BussinessServices.Interface
 {
     public interface IRegisterUser
     {
-        long RegisterUser(UserLoginEntity register);
+        long RegisterUser(UserLoginDTO register);
 
         //bool UpdateOtherUserInformation(int userId, UserAccountDetailsEntity accountDetail);//Add information of user Account details
 
@@ -15,7 +15,7 @@ namespace BussinessServices.Interface
 
         bool UserNameAvailability(string userName);
 
-       
+        UserLogin AuthorisedUser(UserLoginDTO register);
 
 
     }

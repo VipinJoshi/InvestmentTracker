@@ -11,6 +11,7 @@
     <AssemblyName>BussinessServices</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,11 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
@@ -45,9 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\IEarningSlab.cs" />
+    <Compile Include="DtoMapper\AutoMapperConfig.cs" />
+    <Compile Include="DtoMapper\Profiles\LoanLeadMappingProfile.cs" />
+    <Compile Include="Interface\ILoanLeadInformation.cs" />
+    <Compile Include="Interface\ILoanType.cs" />
     <Compile Include="Interface\IRegisterUser.cs" />
     <Compile Include="Interface\IUserLogin.cs" />
+    <Compile Include="LeadInformation\LoanLeadInformation.cs" />
+    <Compile Include="LeadInformation\LoanTypeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users\Register.cs" />
   </ItemGroup>
@@ -59,13 +74,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BussinessEntities\BussinessEntities.csproj">
-      <Project>{1584f852-55bf-4118-97cc-83d6fc9b45bd}</Project>
-      <Name>BussinessEntities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\InvestmentDataModel\InvestmentDataModel.csproj">
       <Project>{d1345e94-b50f-421a-839f-b3ca34b58c86}</Project>
       <Name>InvestmentDataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InvestmentDTO\InvestmentDTO.csproj">
+      <Project>{A5C7F70B-9233-42DD-8E17-40C0592767BD}</Project>
+      <Name>InvestmentDTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

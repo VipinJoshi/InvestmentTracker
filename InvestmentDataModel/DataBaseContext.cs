@@ -6,9 +6,9 @@ using System.Data.Entity;
 
 namespace InvestmentDataModel
 {
-    public  class DataBaseContext:DbContext
+    public class DataBaseContext : DbContext
     {
-        public DataBaseContext():base("InvestmentTracker")
+        public DataBaseContext() : base("InvestmentTracker")
         {
             Database.SetInitializer<DataBaseContext>(new CreateDatabaseIfNotExists<DataBaseContext>());
         }
@@ -18,7 +18,9 @@ namespace InvestmentDataModel
             base.OnModelCreating(modelBuilder);
         }
 
-        public  DbSet<UserLogin> UserLogin { get; set; }
-        public  DbSet<UserAccountDetail> UserAccountDetail { get; set; }
+        public DbSet<UserLogin> UserLogin { get; set; }
+        public DbSet<UserAccountDetail> UserAccountDetail { get; set; }
+        public DbSet<LoanType> LoanType { get; set; }
+        public DbSet<LoanLeadInformation> LoanLeadInformation { get; set; }
     }
 }

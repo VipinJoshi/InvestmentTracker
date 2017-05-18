@@ -11,6 +11,7 @@
     <AssemblyName>BussinessEntities</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,9 +43,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EarningSlabEntity.cs" />
+    <Compile Include="LoanLeadInformationEntity.cs" />
+    <Compile Include="LoanTypeEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserAccountDetailsEntity.cs" />
     <Compile Include="UserLoginEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InvestmentDataModel\InvestmentDataModel.csproj">
+      <Project>{D1345E94-B50F-421A-839F-B3CA34B58C86}</Project>
+      <Name>InvestmentDataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

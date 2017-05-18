@@ -1,0 +1,14 @@
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\InvestmentDataModel.dll.config
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\InvestmentDataModel.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\InvestmentDataModel.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\EntityFramework.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\EntityFramework.SqlServer.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\MySql.Data.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\MySql.Data.Entity.EF6.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\EntityFramework.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\bin\Release\EntityFramework.SqlServer.xml
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\obj\Release\InvestmentDataModel.csprojResolveAssemblyReference.cache
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\obj\Release\InvestmentDataModel.Migrations.initial.resources
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\obj\Release\InvestmentDataModel.csproj.GenerateResource.Cache
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\obj\Release\InvestmentDataModel.dll
+E:\InvestmentTracker\InvestmentTrackerApi\InvestmentDataModel\obj\Release\InvestmentDataModel.pdb

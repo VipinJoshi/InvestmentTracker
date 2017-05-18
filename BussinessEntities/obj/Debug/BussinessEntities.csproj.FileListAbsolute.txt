@@ -9,6 +9,12 @@ C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\BussinessEnt
 C:\Users\Vipin Joshi\Desktop\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.pdb
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.dll
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\InvestmentDataModel.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\EntityFramework.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\InvestmentDataModel.pdb
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\EntityFramework.xml
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.csprojResolveAssemblyReference.cache
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.dll
 E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.pdb
-E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\obj\Debug\BussinessEntities.csprojResolveAssemblyReference.cache
+E:\InvestmentTracker\InvestmentTrackerApi\BussinessEntities\bin\Debug\BussinessEntities.dll.config

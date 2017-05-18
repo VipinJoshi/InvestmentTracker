@@ -28,11 +28,12 @@ namespace DataModel.UnitOfWork
         }
 
         GenericRepository<UserLogin, DataBaseContext> _userRepository;
-
+        GenericRepository<LoanLeadInformation, DataBaseContext> _loanLeadRepository;
+        GenericRepository<LoanType, DataBaseContext> _loanTypeRepository;
         #endregion
 
         #region properties
-       
+
 
         public IGenericRepository<UserLogin> UsersLogin
         {
@@ -54,6 +55,30 @@ namespace DataModel.UnitOfWork
                 //not implemented as its not in used right now
                 throw new NotImplementedException();
             }
+        }
+
+      
+        public IGenericRepository<LoanLeadInformation> LoanLeadInformation
+        {
+            get
+            {
+                if (_loanLeadRepository == null)
+                    _loanLeadRepository = new GenericRepository<LoanLeadInformation, DataBaseContext>(context);
+
+                return _loanLeadRepository;
+            }
+        }
+
+        public IGenericRepository<LoanType> LoanType
+        {
+            get
+            {
+                if (_loanTypeRepository == null)
+                    _loanTypeRepository = new GenericRepository<LoanType, DataBaseContext>(context);
+
+                return _loanTypeRepository;
+            }
+
         }
 
         #endregion

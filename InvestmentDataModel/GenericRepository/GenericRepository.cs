@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using InvestmentDataModel.IRepository;
-
+using System.Threading.Tasks;
 
 namespace InvestmentDataModel.GenericRepository
 {
@@ -148,6 +148,13 @@ namespace InvestmentDataModel.GenericRepository
             return DbSet.ToList();
         }
 
+
+        public virtual IQueryable<TEntity> GetQuery()
+        {
+            IQueryable<TEntity> query = DbSet;
+            return query;
+        }
+
         /// <summary>
         /// Inclue multiple
         /// </summary>
@@ -203,6 +210,7 @@ namespace InvestmentDataModel.GenericRepository
         {
             return DbSet.Find(predicate);
         }
+
 
         #endregion
     }

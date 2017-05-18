@@ -4,14 +4,14 @@
 
 using System;
 using System.Collections.Generic;
-using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using BussinessEntities;
 using BussinessServices.Interface;
 using BussinessServices.Users;
 using InvestmentTrackerApi.HelperClass;
 using InvestmentTrackerDTO;
+using System.Threading.Tasks;
+using InvestmentDTO.UserDTO;
 
 namespace InvestmentTrackerApi.Controller
 {
@@ -30,13 +30,13 @@ namespace InvestmentTrackerApi.Controller
         [HttpPost]
         [ActionName("Registration")]
         [Route("Register")]
-        public HttpResponseMessage UserRegistration(UserRegistration registration)
+        public async Task<IHttpActionResult> UserRegistration(UserRegistration registration)
         {
             HttpResponseMessage response = null;
 
             if (registration != null && ModelState.IsValid)
             {
-                var register = new UserLoginEntity()
+                var register = new UserLoginDTO()
                 {
                     UserName = registration.UserName,
                     Email = registration.Email,
@@ -52,13 +52,14 @@ namespace InvestmentTrackerApi.Controller
                 // Register user
                 userRegistration.RegisterUser(register);
 
-                response = Request.CreateResponse(HttpStatusCode.OK, registration); 
+                return Ok(registration);// Request.CreateResponse(HttpStatusCode.OK, registration); 
             }
             else
             {
-                response = Request.CreateResponse(HttpStatusCode.NotAcceptable, registration);
+                return BadRequest(ModelState);
+             //   response = Request.CreateResponse(HttpStatusCode.NotAcceptable, registration);
             }
-            return response;
+           // return response;
 
         }
 
