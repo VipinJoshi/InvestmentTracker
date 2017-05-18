@@ -22,6 +22,10 @@ namespace InvestmentDataModel.DataModel
         [MaxLength(15)]
         public string MobileNumber { get; set; }
         public DateTime? DateOfLeadCreation { get; set; }
+        [MaxLength(100)]
+        public string Name { get; set; }
+        [MaxLength(100)]
+        public string City { get; set; }
         //[ForeignKey("LoanTypeId")]
         public virtual LoanType LoanType { get; set; }
 

@@ -26,7 +26,6 @@ namespace InvestmentTrackerApi.Controller
 
         [HttpPost]
         [Route("{SaveLoanLead}")]
-
         public IHttpActionResult SaveLoanLead()
         {
             return Ok();
