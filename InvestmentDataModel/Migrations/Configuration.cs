@@ -2,7 +2,7 @@ namespace InvestmentDataModel.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<InvestmentDataModel.DataBaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DataBaseContext>
     {
         public Configuration()
         {
@@ -12,7 +12,7 @@ namespace InvestmentDataModel.Migrations
 
         }
 
-        protected override void Seed(InvestmentDataModel.DataBaseContext context)
+        protected override void Seed(DataBaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -28,6 +28,7 @@ namespace InvestmentDataModel.Migrations
             //
             LookUpMigrationData migration = new LookUpMigrationData(); 
             migration.LoanTypeData(context);
+            migration.RoleData(context);
         }
 
 

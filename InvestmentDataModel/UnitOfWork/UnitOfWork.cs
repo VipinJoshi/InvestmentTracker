@@ -30,6 +30,7 @@ namespace DataModel.UnitOfWork
         GenericRepository<UserLogin, DataBaseContext> _userRepository;
         GenericRepository<LoanLeadInformation, DataBaseContext> _loanLeadRepository;
         GenericRepository<LoanType, DataBaseContext> _loanTypeRepository;
+        GenericRepository<UserRole, DataBaseContext> _roleRepository;
         #endregion
 
         #region properties
@@ -80,6 +81,19 @@ namespace DataModel.UnitOfWork
             }
 
         }
+
+        public IGenericRepository<UserRole> UserRole
+        {
+            get
+            {
+                if (_roleRepository == null)
+                    _roleRepository = new GenericRepository<UserRole, DataBaseContext>(context);
+
+                return _roleRepository;
+            }
+        }
+
+
 
         #endregion
 

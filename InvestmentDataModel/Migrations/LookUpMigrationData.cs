@@ -18,5 +18,13 @@ namespace InvestmentDataModel.Migrations
                 new LoanType { LoanTypeName = "Personal Loan", Active = true }
                 );
         }
+
+        public void RoleData(DataBaseContext context)
+        {
+            context.Role.AddOrUpdate(l => l.RoleName,
+                new Role { RoleName = "admin", Active = true },
+                new Role { RoleName = "normal", Active = true }
+                );
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -22,6 +23,7 @@ namespace InvestmentDataModel.DataModel
         public bool Active { get; set; }
         public bool Locked { get; set; }
         public DateTime DateOfAccountCreation { get; set; }
-       
+        public virtual ICollection<UserRole> UserRoles { get; set; }
+        //public virtual UserRole UserRoles { get; set; }
     }
 }

@@ -62,6 +62,8 @@
     <Compile Include="DataModel\LoanType.cs" />
     <Compile Include="DataModel\UserAccountDetail.cs" />
     <Compile Include="DataModel\UserLogin.cs" />
+    <Compile Include="DataModel\Role.cs" />
+    <Compile Include="DataModel\UserRole.cs" />
     <Compile Include="GenericRepository\GenericRepository.cs" />
     <Compile Include="Interface\IGenericRepository.cs" />
     <Compile Include="Interface\IUnitOfWork.cs" />

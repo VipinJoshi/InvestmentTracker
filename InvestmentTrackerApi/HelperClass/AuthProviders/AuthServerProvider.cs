@@ -1,7 +1,9 @@
 ﻿using BussinessServices.Interface;
 using BussinessServices.Users;
 using InvestmentDTO.UserDTO;
+using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;
+using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -26,7 +28,7 @@ namespace InvestmentTrackerApi.HelperClass.AuthProviders
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
             var register = new UserLoginDTO()
             {
-                UserName = context.UserName,
+                Email = context.UserName,
                 Password = PassWordEncryption.EncryptPassword(context.Password),
                 Active = true,
                 Locked = false,
@@ -50,12 +52,35 @@ namespace InvestmentTrackerApi.HelperClass.AuthProviders
         //    }
         //}
 
-        var identity = new ClaimsIdentity(context.Options.AuthenticationType);
-            identity.AddClaim(new Claim("sub", context.UserName));
-            identity.AddClaim(new Claim("role", "user"));//set user role later
+            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+            identity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));//set user role later
+                                                                   // identity.AddClaim(new Claim(ClaimTypes.UserData,context.ErrorDescription))
 
-            context.Validated(identity);
+            var props = new AuthenticationProperties(new Dictionary<string, string>
+                {
+                    { "LoginUserName", user.UserName },
+                    { "LoginEmail", user.Email },
+                    { "Role", "RoleName" }
+                });
+            var ticket = new AuthenticationTicket(identity, props);
+            context.Validated(ticket);
 
         }
+
+        /// <summary>
+        /// this is for the extra information apart token
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
+        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
+        {
+            foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
+            {
+                context.AdditionalResponseParameters.Add(property.Key, property.Value);
+            }
+            return Task.FromResult<object>(null);
+        }
+
+        
     }
 }

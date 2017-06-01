@@ -22,5 +22,7 @@ namespace InvestmentDataModel
         public DbSet<UserAccountDetail> UserAccountDetail { get; set; }
         public DbSet<LoanType> LoanType { get; set; }
         public DbSet<LoanLeadInformation> LoanLeadInformation { get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<Role> Role { get; set; }
     }
 }

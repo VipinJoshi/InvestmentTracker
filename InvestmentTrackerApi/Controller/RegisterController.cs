@@ -32,7 +32,6 @@ namespace InvestmentTrackerApi.Controller
         [Route("Register")]
         public async Task<IHttpActionResult> UserRegistration(UserRegistration registration)
         {
-            HttpResponseMessage response = null;
 
             if (registration != null && ModelState.IsValid)
             {
@@ -43,10 +42,8 @@ namespace InvestmentTrackerApi.Controller
                     Password = PassWordEncryption.EncryptPassword(registration.password),
                     Active = true,
                     Locked = false,
-                    DateOfAccountCreation = DateTime.Now
-
-
-
+                    DateOfAccountCreation = DateTime.Now,
+                    RoleId= registration.RoleId??2
                 };
 
                 // Register user

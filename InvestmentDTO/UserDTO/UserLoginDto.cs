@@ -11,5 +11,6 @@ namespace InvestmentDTO.UserDTO
         public bool Active { get; set; }
         public bool Locked { get; set; }
         public DateTime DateOfAccountCreation { get; set; }
+        public int RoleId { get; set; }
     }
 }

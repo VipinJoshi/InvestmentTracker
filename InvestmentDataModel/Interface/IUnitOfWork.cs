@@ -9,6 +9,7 @@ namespace InvestmentDataModel.Interface
         IGenericRepository<UserAccountDetail> UsersAccountDetail { get; }
         IGenericRepository<LoanLeadInformation> LoanLeadInformation { get; }
         IGenericRepository<LoanType> LoanType { get; }
+        IGenericRepository<UserRole> UserRole { get; }
         int Complete();
     }
 }

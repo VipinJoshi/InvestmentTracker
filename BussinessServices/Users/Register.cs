@@ -26,9 +26,9 @@ namespace BussinessServices.Users
         {
             var userLogin = new UserLogin();
 
-            var result = unitOfWork.UsersLogin.Get(p=>string.Equals(p.UserName,userName,StringComparison.OrdinalIgnoreCase)) ?? new UserLogin() ;
+            var result = unitOfWork.UsersLogin.Get(p => string.Equals(p.UserName, userName, StringComparison.OrdinalIgnoreCase)) ?? new UserLogin();
 
-            return !(result.UserId>0);
+            return !(result.UserId > 0);
         }
 
         /// <summary>
@@ -49,6 +49,17 @@ namespace BussinessServices.Users
             };
 
             unitOfWork.UsersLogin.Insert(userLogin);
+
+            var userRole = new UserRole
+            {
+                RoleId = register.RoleId,
+                UserLogin = userLogin
+               ,
+                Active = true
+            };
+
+            unitOfWork.UserRole.Insert(userRole);
+
             unitOfWork.Complete();
             unitOfWork.Dispose();
             return userLogin.UserId;
@@ -59,20 +70,16 @@ namespace BussinessServices.Users
         {
             var userLogin = new UserLogin
             {
-                UserName = register.UserName,
                 Email = register.Email,
                 Password = register.Password
             };
             UserLogin user = unitOfWork.UsersLogin.Get(
-                  p => p.UserName.Equals(register.UserName, StringComparison.OrdinalIgnoreCase));
-           //     &&
-           //p.Password.Equals(register.Password)
-           //&& p.Active.Equals(register.Active)
-           //&& p.Locked.Equals(register.Locked));
+                  p => p.Email.Equals(register.Email, StringComparison.OrdinalIgnoreCase)
+                  && p.Password == (register.Password) && p.Active == true);
             return user;
 
         }
 
-        
+
     }
 }
