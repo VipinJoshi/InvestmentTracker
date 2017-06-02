@@ -1,5 +1,6 @@
 ﻿using InvestmentDataModel.DataModel;
 using InvestmentDTO.UserDTO;
+using System.Linq;
 
 namespace BussinessServices.Interface
 {
@@ -15,7 +16,7 @@ namespace BussinessServices.Interface
 
         bool UserNameAvailability(string userName);
 
-        UserLogin AuthorisedUser(UserLoginDTO register);
+        UserTokenDTO AuthorisedUser(UserLoginDTO register);
 
 
     }

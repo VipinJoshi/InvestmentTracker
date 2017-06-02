@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace InvestmentTrackerApi.HelperClass.AuthProviders
 {
-    public class AuthServerProvider: OAuthAuthorizationServerProvider
+    public class AuthServerProvider : OAuthAuthorizationServerProvider
     {
         private readonly IRegisterUser userRegistration = null;
         public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
@@ -33,34 +33,22 @@ namespace InvestmentTrackerApi.HelperClass.AuthProviders
                 Active = true,
                 Locked = false,
             };
-            
-             var user = userRegistration.AuthorisedUser(register);
-             
-            if (user == null)
+
+            var user = userRegistration.AuthorisedUser(register);
+
+            if (user == null || string.IsNullOrWhiteSpace(user.UserName))
             {
                 context.SetError("invalid_grant", "The user name or password is incorrect.");
                 return;
             }
-        //using (AuthRepository _repo = new AuthRepository())
-        //{
-        //    IdentityUser user = await _repo.FindUser(context.UserName, context.Password);
-
-        //    if (user == null)
-        //    {
-        //        context.SetError("invalid_grant", "The user name or password is incorrect.");
-        //        return;
-        //    }
-        //}
 
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);
-            identity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));//set user role later
-                                                                   // identity.AddClaim(new Claim(ClaimTypes.UserData,context.ErrorDescription))
-
+            identity.AddClaim(new Claim(ClaimTypes.Role, user.RolesCollection));
+             
             var props = new AuthenticationProperties(new Dictionary<string, string>
                 {
                     { "LoginUserName", user.UserName },
-                    { "LoginEmail", user.Email },
-                    { "Role", "RoleName" }
+                    { "Role", user.RolesCollection }
                 });
             var ticket = new AuthenticationTicket(identity, props);
             context.Validated(ticket);

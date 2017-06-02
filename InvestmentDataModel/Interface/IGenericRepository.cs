@@ -16,7 +16,10 @@ namespace InvestmentDataModel.IRepository
         /// <param name="entity"></param>
         void Insert(TEntity entity);
 
-
+        IQueryable<TEntity> GetWithIncludes(
+            System.Linq.Expressions.Expression<Func<TEntity,
+            bool>> predicate);
+        
         /// <summary>
         /// Generic Delete method for the entities
         /// </summary>

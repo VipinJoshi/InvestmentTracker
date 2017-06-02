@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="DtoMapper\AutoMapperConfig.cs" />
     <Compile Include="DtoMapper\Profiles\LoanLeadMappingProfile.cs" />
+    <Compile Include="HelperClass\UserRoles.cs" />
     <Compile Include="Interface\ILoanLeadInformation.cs" />
     <Compile Include="Interface\ILoanType.cs" />
     <Compile Include="Interface\IRegisterUser.cs" />

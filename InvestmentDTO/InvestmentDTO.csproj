@@ -45,6 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDTO\UserLoginAccountDetailDTO.cs" />
     <Compile Include="UserDTO\UserLoginDTO.cs" />
+    <Compile Include="UserDTO\UserTokenDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InvestmentDataModel\InvestmentDataModel.csproj">

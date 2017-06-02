@@ -6,6 +6,9 @@ using BussinessServices.Interface;
 using DataModel.UnitOfWork;
 using InvestmentDataModel.DataModel;
 using InvestmentDTO.UserDTO;
+using System.Data.Entity;
+using System.Linq;
+using BussinessServices.HelperClass;
 
 namespace BussinessServices.Users
 {
@@ -66,18 +69,40 @@ namespace BussinessServices.Users
 
         }
 
-        public UserLogin AuthorisedUser(UserLoginDTO register)
+        public UserTokenDTO AuthorisedUser(UserLoginDTO register)
         {
             var userLogin = new UserLogin
             {
                 Email = register.Email,
                 Password = register.Password
             };
-            UserLogin user = unitOfWork.UsersLogin.Get(
+            
+            var user = unitOfWork.UsersLogin.GetWithIncludes(
                   p => p.Email.Equals(register.Email, StringComparison.OrdinalIgnoreCase)
-                  && p.Password == (register.Password) && p.Active == true);
-            return user;
+                  && p.Password == (register.Password) && p.Active == true &&p.Locked==false).Include(p=>p.UserRoles.Select(k=>k.Role));
 
+            var query = user.Select(emp => new UserRoles{ UserName= emp.UserName,Roles= emp.UserRoles.Select(u=>u.Role.RoleName) });
+
+            UserTokenDTO token = new UserTokenDTO();
+            var userList = query.ToList();
+            if (userList == null)
+            {
+                return token;
+            }
+            token.UserName = userList[0].UserName;
+            var roles = string.Empty;
+
+            // string.Join("|", userList[0].Roles.Select();  try that when get time
+            foreach (var item in userList[0].Roles)
+            {
+                if (!string.IsNullOrWhiteSpace(item))
+                {
+                    roles += item + ",";
+                }
+            }
+            token.RolesCollection = roles.TrimEnd(',');
+
+            return token;
         }
 
 

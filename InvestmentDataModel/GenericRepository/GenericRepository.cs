@@ -170,6 +170,15 @@ namespace InvestmentDataModel.GenericRepository
             return query.Where(predicate);
         }
 
+        public IQueryable<TEntity> GetWithIncludes(
+            System.Linq.Expressions.Expression<Func<TEntity,
+            bool>> predicate)
+        {
+            IQueryable<TEntity> query = this.DbSet;
+            //query = Aggregate(query, (current, inc) => current.Include(inc));
+            return query.Where(predicate);
+
+        }
         /// <summary>
         /// Generic method to check if entity exists
         /// </summary>

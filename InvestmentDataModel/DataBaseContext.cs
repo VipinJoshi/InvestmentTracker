@@ -16,6 +16,7 @@ namespace InvestmentDataModel
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<UserLogin> UserLogin { get; set; }
