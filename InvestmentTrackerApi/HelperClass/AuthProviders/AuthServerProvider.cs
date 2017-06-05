@@ -48,7 +48,8 @@ namespace InvestmentTrackerApi.HelperClass.AuthProviders
             var props = new AuthenticationProperties(new Dictionary<string, string>
                 {
                     { "LoginUserName", user.UserName },
-                    { "Role", user.RolesCollection }
+                    { "Role", user.RolesCollection },
+                    { "UserId", user.UserId.ToString() }
                 });
             var ticket = new AuthenticationTicket(identity, props);
             context.Validated(ticket);

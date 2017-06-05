@@ -5,6 +5,8 @@ namespace BussinessServices.HelperClass
     public class UserRoles
     {
         public string UserName { get; set; }
+        public long UserId { get; set; }
+
         public IEnumerable<string> Roles { get; set; }
     }
 }

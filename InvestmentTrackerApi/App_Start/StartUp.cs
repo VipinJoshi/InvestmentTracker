@@ -27,7 +27,7 @@ namespace InvestmentTrackerApi.App_Start
             {
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(2),
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(20),
                 Provider = new AuthServerProvider(),
                 
             };

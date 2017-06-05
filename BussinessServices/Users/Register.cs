@@ -76,19 +76,20 @@ namespace BussinessServices.Users
                 Email = register.Email,
                 Password = register.Password
             };
-            
+
             var user = unitOfWork.UsersLogin.GetWithIncludes(
                   p => p.Email.Equals(register.Email, StringComparison.OrdinalIgnoreCase)
-                  && p.Password == (register.Password) && p.Active == true &&p.Locked==false).Include(p=>p.UserRoles.Select(k=>k.Role));
+                  && p.Password == (register.Password) && p.Active == true && p.Locked == false).Include(p => p.UserRoles.Select(k => k.Role));
 
-            var query = user.Select(emp => new UserRoles{ UserName= emp.UserName,Roles= emp.UserRoles.Select(u=>u.Role.RoleName) });
+            var query = user.Select(emp => new UserRoles { UserId = emp.UserId, UserName = emp.UserName, Roles = emp.UserRoles.Select(u => u.Role.RoleName) });
 
             UserTokenDTO token = new UserTokenDTO();
             var userList = query.ToList();
-            if (userList == null)
+            if (userList == null || userList.Count<1)
             {
                 return token;
             }
+            token.UserId = userList[0].UserId;
             token.UserName = userList[0].UserName;
             var roles = string.Empty;
 

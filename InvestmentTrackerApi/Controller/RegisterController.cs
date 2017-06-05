@@ -85,5 +85,13 @@ namespace InvestmentTrackerApi.Controller
             return user;
         }
 
+        [HttpPost]
+        [Route("Logout")]
+        public IHttpActionResult Logout()
+        {
+          //  this.Authentication.SignOut(CookieAuthenticationDefaults.AuthenticationType);
+            return this.Ok(new { message = "Logout successful." });
+        }
+
     }
 }
